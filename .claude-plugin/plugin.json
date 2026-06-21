@@ -1,6 +1,6 @@
 {
   "name": "domain-driven-design",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "把 DDD 从靠资深架构师的经验，变成 Agent 可重复执行的开发流程：支持 0→1 新建（greenfield）与既有项目改造（brownfield）两种驱动，从模糊业务诉求一路推到接口优先、语言无关的可运行代码。全程可串联、可回溯、可门禁，SKILL/COMMAND/WORKFLOW 三层分明。",
   "author": {
     "name": "Pauly"
