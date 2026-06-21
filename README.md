@@ -180,20 +180,6 @@ tags: "[ddd, <stage>, <focus>]"
 
 正文固定七段（顺序固定）：**使用时机 / 输入要求 / 流程 / 输出 / 校验清单 / 回溯触发 / 示例**。只要所有 Skill 都遵守这个契约，上一阶段的产出就能直接喂进下一阶段。
 
-### 命名空间约定（重要）
-
-安装后本插件名为 **`domain-driven-design`**（插件名必须是全小写 kebab-case）。插件内的 Skill 与命令在调用时带插件命名空间前缀：
-
-- **Skill 调用**：完整名为 `domain-driven-design:<skill>`，例如 `domain-driven-design:ddd-scope`、`domain-driven-design:ddd-aggregates`。
-- **命令调用**：完整名为 `/domain-driven-design:<command>`，例如 `/domain-driven-design:ddd-new`。
-- **`SKILL.md` 的 `name:` 字段保持短名**（如 `name: ddd-scope`）——命名空间由插件自动加在前面，不要把 `domain-driven-design:` 写进 frontmatter。
-
-因此：
-
-- `commands/`、`skills/`、`workflows/` 的正文里，凡是**让 Claude 去调用另一个 Skill/命令**的跨引用，都写成带 `domain-driven-design:` 前缀的完整名，保证未来即使 Claude Code 收紧"必须带命名空间"的规则也不受影响。
-- 本文的**目录树**与**流程图**用短名（它们描述的是文件名与设计示意，不是调用指令），属正常。
-- ⚠ 插件名 = 命名空间前缀，所以**改插件名会断掉所有跨引用**，需同步更新全部 `domain-driven-design:` 前缀。
-
 ### 目录结构
 
 ```
