@@ -1,0 +1,23 @@
+{
+  "name": "domain-driven-design",
+  "version": "0.1.0",
+  "description": "DDD 开发流程技能体系：支持 0→1 新建与既有项目改造两种驱动，从问题发现一路推到接口优先、语言无关的代码落地。全程可串联、可回溯、可门禁，SKILL/COMMAND/WORKFLOW 三层分明。",
+  "author": {
+    "name": "Pauly"
+  },
+  "keywords": [
+    "ddd",
+    "domain-driven-design",
+    "domain-modeling",
+    "event-storming",
+    "bounded-context",
+    "context-mapping",
+    "aggregate",
+    "ubiquitous-language",
+    "hexagonal-architecture",
+    "ports-and-adapters",
+    "strangler-fig",
+    "brownfield",
+    "language-agnostic"
+  ]
+}
